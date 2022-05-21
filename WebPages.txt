@@ -7,4 +7,18 @@
 		-Chat J
 		-Challenge M
 		
+		
+-Desing patterns
+	-Home 
+	-Continuous Scrolling
+	-Navigation Tabs
+	-Structured Format
+	-Search Filters
+	-Account Registration
+	
+-Persuasive Desing Patterns
+	-Limited choice (Questionario conoscitivo)
+	-Goal-Gradient Effect (Challenge)
+	
+		
 	
