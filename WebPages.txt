@@ -15,10 +15,10 @@
 	-Structured Format
 	-Search Filters
 	-Account Registration
+	-Progressive Disclosure
 	
 -Persuasive Desing Patterns
 	-Limited choice (Questionario conoscitivo)
-	-Goal-Gradient Effect (Challenge)
 	
 		
 	

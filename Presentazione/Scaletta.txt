@@ -1,16 +1,16 @@
 Documento 1:
-	-  Introduzione (chi siamo, ruolo di ogni componente, etc..);
-	-  Descrizione del problema;
-	-  Descrizione delle Personas con i loro obiettivi;
-	-  Descrizione dei Tasks e questionario utenti;
+	-  Introduzione (chi siamo, ruolo di ogni componente, etc..); M
+	-  Descrizione del problema; M
+	-  Descrizione delle Personas con i loro obiettivi; M
+	-  Descrizione dei Tasks e questionario utenti; G
 
 Documento 2:
-	-  Scenari e use cases;
-	-  Analisi comparativa;
-	-  Idee di progetto;
+	-  Scenari e use cases; G
+	-  Analisi comparativa; G
+	-  Idee di progetto; A
 
 Documento 3:
-	-  paper sketch e prototipi hifi;
-	-  Design pattern;
-	-  Mago di Oz e vautazione del design;
+	-  paper sketch e prototipi hifi; A
+	-  Design pattern; J
+	-  Mago di Oz e vautazione del design; J
 	-  Modifiche da effettuare? No, è perfetto
