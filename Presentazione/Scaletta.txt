@@ -1,0 +1,16 @@
+Documento 1:
+	-  Introduzione (chi siamo, ruolo di ogni componente, etc..);
+	-  Descrizione del problema;
+	-  Descrizione delle Personas con i loro obiettivi;
+	-  Descrizione dei Tasks e questionario utenti;
+
+Documento 2:
+	-  Scenari e use cases;
+	-  Analisi comparativa;
+	-  Idee di progetto;
+
+Documento 3:
+	-  paper sketch e prototipi hifi;
+	-  Design pattern;
+	-  Mago di Oz e vautazione del design;
+	-  Modifiche da effettuare? No, è perfetto
