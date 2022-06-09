@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'creattion_demoregular';
-    src: url('creattion_demo-webfont.woff2') format('woff2'),
-         url('creattion_demo-webfont.woff') format('woff');
+    src: url('/css/font/creattion_demo-webfont.woff2') format('woff2'),
+         url('/css/font/creattion_demo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'apple_garamond_lightregular';
-    src: url('applegaramond-light-webfont.woff2') format('woff2'),
-         url('applegaramond-light-webfont.woff') format('woff');
+    src: url('/css/font/applegaramond-light-webfont.woff2') format('woff2'),
+         url('/css/font/applegaramond-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'apple_garamond_lightitalic';
-    src: url('applegaramond-lightitalic-webfont.woff2') format('woff2'),
-         url('applegaramond-lightitalic-webfont.woff') format('woff');
+    src: url('/css/font/applegaramond-lightitalic-webfont.woff2') format('woff2'),
+         url('/css/font/applegaramond-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: 'apple_garamondbold_italic';
-    src: url('applegaramond-bolditalic-webfont.woff2') format('woff2'),
-         url('applegaramond-bolditalic-webfont.woff') format('woff');
+    src: url('/css/font/applegaramond-bolditalic-webfont.woff2') format('woff2'),
+         url('/css/font/applegaramond-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -52,8 +52,8 @@
 
 @font-face {
     font-family: 'apple_garamondbold';
-    src: url('applegaramond-bold-webfont.woff2') format('woff2'),
-         url('applegaramond-bold-webfont.woff') format('woff');
+    src: url('/css/font/applegaramond-bold-webfont.woff2') format('woff2'),
+         url('/css/font/applegaramond-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -64,8 +64,8 @@
 
 @font-face {
     font-family: 'apple_garamonditalic';
-    src: url('applegaramond-italic-webfont.woff2') format('woff2'),
-         url('applegaramond-italic-webfont.woff') format('woff');
+    src: url('/css/font/applegaramond-italic-webfont.woff2') format('woff2'),
+         url('/css/font/applegaramond-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -76,8 +76,8 @@
 
 @font-face {
     font-family: 'apple_garamondregular';
-    src: url('applegaramond-webfont.woff2') format('woff2'),
-         url('applegaramond-webfont.woff') format('woff');
+    src: url('/css/font/applegaramond-webfont.woff2') format('woff2'),
+         url('/css/font/    applegaramond-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

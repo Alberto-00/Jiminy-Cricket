@@ -1,3 +1,6 @@
+body{
+    font-family: "Apple Garamond";
+}
 .background{
     background-color: #5A7B5F !important;
 }
@@ -6,4 +9,14 @@
     width: 50px;
     height: 62px;
     margin-left: 18px;
+}
+
+.font-title{
+    font-family: "Creattion Demo";
+    color: #B7DB99 !important;
+}
+
+.button-navbar{
+    background-color: #B7DB99;
+    border-color: rgba(90, 123, 95, 0.7);
 }
