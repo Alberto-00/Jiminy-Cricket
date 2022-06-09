@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="../../css/font/stylesheet.css">
     <link rel="stylesheet" href="../../css/partials/library.css">
     <link rel="stylesheet" href="../../css/student/personalPage.css">
+    <link rel="stylesheet" href="../../css/partials/footer.css">
 </head>
 <body>
 <!-- Navbar -->
-<div w3-include-html="../partials/navbar.html"></div>
+<div w3-include-html="../partials/navbarPersonas.html"></div>
 <script>
     includeHTML();
 </script>
 <!-- End Navbar -->
 
-
+<!-- Anagrafica -->
 <div class="container">
     <div class="row">
         <div class="col">
@@ -33,8 +34,6 @@
                 <button type="submit" class="btn button-navbar-save">Logout</button>
             </div>
         </div>
-
-        <!-- Anagrafica -->
         <div class="col">
             <form>
                 <div class="mb-3">
@@ -74,12 +73,18 @@
                 </div>
             </form>
         </div>
-        <!-- End Anagrafica -->
-
     </div>
     <div class="save">
         <button type="submit" class="btn button-navbar-save">Salva le modifiche</button>
     </div>
 </div>
+<!-- End Anagrafica -->
+
+<!-- Footer -->
+<div w3-include-html="../partials/footer.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Footer-->
 </body>
 </html>

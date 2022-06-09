@@ -1,33 +1,14 @@
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #5A7B5F !important;
-    color: white;
-    text-align: center;
-}
+    text-align: right;
+    margin-top: 3.5em;
+    background-color: #5A7B5F;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);}
 
 .font-text{
-    font-size: 30px;
+    font-size: 18px;
+    padding: 15px;
+    letter-spacing: 1px;
     font-family: "Apple Garamond";
-    color: #B7DB99 !important;
-
-}
-
-.footer-bg-color{
-
-}
-
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1.5rem !important;
-        padding-left: 1.5rem !important;
-    }
-}
-
-@media (max-width: 992px) {
-    li.nav-item{
-        margin: auto;
-    }
+    color: #B7DB99;
 }

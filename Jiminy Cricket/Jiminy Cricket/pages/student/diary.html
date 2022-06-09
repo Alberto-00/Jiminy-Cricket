@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jiminy Cricket - Diario Studente</title>
+  <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../../js/partials/lib.js"></script>
+  <link rel="stylesheet" href="../../css/partials/navbar.css">
+  <link rel="stylesheet" href="../../css/font/stylesheet.css">
+  <link rel="stylesheet" href="../../css/partials/library.css">
+  <link rel="stylesheet" href="../../css/partials/footer.css">
+  <link rel="stylesheet" href="../../css/student/diary.css">
+  <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
+</head>
+<body>
+<!-- Navbar -->
+<div w3-include-html="../partials/navbarPersonas.html"></div>
+<script>
+  includeHTML();
+</script>
+<!-- End Navbar -->
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="noSave">
+        <button type="submit" class="btn button-navbar-save">Esci senza salvare</button>
+      </div>
+    </div>
+
+    <!-- Text Area -->
+    <div class="col">
+      <div class="form-group">
+        <label for="text"></label>
+        <textarea class="form-control" id="text" placeholder="Caro Diario, ..."></textarea>
+      </div>
+      <div class="save">
+        <button type="submit" class="btn button-navbar-save">Salva le modifiche</button>
+      </div>
+    </div>
+    <!-- End Text Area -->
+  </div>
+</div>
+
+<!-- Footer -->
+<div w3-include-html="../partials/footer.html"></div>
+<script>
+  includeHTML();
+</script>
+<!-- End Footer-->
+</body>
+</html>

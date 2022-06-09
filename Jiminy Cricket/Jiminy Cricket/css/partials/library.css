@@ -2,3 +2,9 @@ body{
     font-family: "Apple Garamond";
     background-color: rgba(183, 219, 153, 0.80);
 }
+
+.container{
+    margin-top: 3.5em;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
