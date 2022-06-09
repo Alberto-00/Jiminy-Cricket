@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Jiminy Cricket - Pagina Personale</title>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/partials/lib.js"></script>
+    <link rel="stylesheet" href="../../css/partials/navbar.css">
+    <link rel="stylesheet" href="../../css/partials/footer.css">
+    <link rel="stylesheet" href="../../css/font/stylesheet.css">
+    <link rel="stylesheet" href="../../css/partials/library.css">
+    <link rel="stylesheet" href="../../css/student/personalPage.css">
+</head>
+<body>
+<!-- Navbar -->
+<div w3-include-html="../partials/navbar.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Navbar -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div>
+                <input type="file" hidden>
+                <button class="photo">
+                    <img style="width: 69%;" src="../../img/user.png" alt="pencil">
+                </button>
+            </div>
+            <div class="logout">
+                <button type="submit" class="btn button-navbar-save">Logout</button>
+            </div>
+        </div>
+
+        <!-- Anagrafica -->
+        <div class="col">
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Nickname</label>
+                    <input type="email" class="form-control" placeholder="Nickname" id="email" aria-describedby="emailHelp">
+                    <button class="modify">
+                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" placeholder="Password" class="form-control" id="password">
+                    <button class="modify">
+                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="ripetiPassword" class="form-label">Ripeti Password</label>
+                    <input type="password" placeholder="Password" class="form-control" id="ripetiPassword">
+                    <button class="modify">
+                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Data di nascita</label>
+                    <input type="date" class="form-control" id="date">
+                    <button class="modify">
+                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="psyco" class="form-label">Il mio psicologo</label>
+                    <input type="text" placeholder="Il mio psicologo" class="form-control" id="psyco">
+                    <button class="modify">
+                        <img style="width: 69%;" src="../../img/chat.svg" alt="chat">
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- End Anagrafica -->
+
+    </div>
+    <div class="save">
+        <button type="submit" class="btn button-navbar-save">Salva le modifiche</button>
+    </div>
+</div>
+<div w3-include-html="../partials/footer.html"></div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

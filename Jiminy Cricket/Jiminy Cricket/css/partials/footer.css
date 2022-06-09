@@ -1,3 +1,33 @@
-body{
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5A7B5F !important;
+    color: white;
+    text-align: center;
+}
+
+.font-text{
+    font-size: 30px;
     font-family: "Apple Garamond";
+    color: #B7DB99 !important;
+
+}
+
+.footer-bg-color{
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    li.nav-item{
+        margin: auto;
+    }
 }
