@@ -7,6 +7,7 @@
   <script src="../../js/bootstrap/bootstrap.min.js"></script>
   <script src="../../js/jquery/jquery.js"></script>
   <script src="../../js/partials/lib.js"></script>
+  <script src="../../js/partials/calendar.js" defer></script>
   <script src="../../js/partials/popup.js"></script>
   <link rel="stylesheet" href="../../css/partials/navbar.css">
   <link rel="stylesheet" href="../../css/font/stylesheet.css">
@@ -14,6 +15,7 @@
   <link rel="stylesheet" href="../../css/partials/footer.css">
   <link rel="stylesheet" href="../../css/student/diary.css">
   <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
+  <link rel="stylesheet" href="../../css/partials/calendar.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -24,8 +26,46 @@
 <!-- End Navbar -->
 
 <div class="container">
+  <h1 class="title font-title">Il mio Diario</h1>
   <div class="row">
     <div class="col">
+      <!-- Calendar -->
+      <div id="body" class="calendar light">
+        <div class="calendar-header">
+          <span class="month-picker" id="month-picker">Giugno</span>
+          <div class="year-picker">
+            <span class="year-change" id="prev-year">
+              <pre><</pre>
+            </span>
+            <span id="year">2022</span>
+            <span class="year-change" id="next-year">
+              <pre>></pre>
+            </span>
+          </div>
+        </div>
+        <div class="calendar-body">
+          <div class="calendar-week-day">
+            <div>Dom</div>
+            <div>Lun</div>
+            <div>Mar</div>
+            <div>Mer</div>
+            <div>Gio</div>
+            <div>Ven</div>
+            <div>Sab</div>
+          </div>
+          <div class="calendar-days"></div>
+        </div>
+        <div class="calendar-footer">
+          <div class="toggle">
+            <span>Dark Mode</span>
+            <div class="dark-mode-switch">
+              <div class="dark-mode-switch-ident"></div>
+            </div>
+          </div>
+        </div>
+        <div class="month-list"></div>
+      </div>
+      <!-- End Calendar -->
       <div class="noSave">
         <button href="#myModalExit" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Esci senza salvare</button>
       </div>
@@ -64,6 +104,6 @@
 <script>
   includeHTML();
 </script>
-<!-- End Footer-->
+<!-- End Footer -->
 </body>
 </html>
