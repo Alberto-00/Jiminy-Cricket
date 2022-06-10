@@ -5,12 +5,15 @@
     <title>Jiminy Cricket - Pagina Personale</title>
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
     <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/jquery/jquery.js"></script>
     <script src="../../js/partials/lib.js"></script>
+    <script src="../../js/partials/popup.js"></script>
     <link rel="stylesheet" href="../../css/partials/navbar.css">
     <link rel="stylesheet" href="../../css/font/stylesheet.css">
     <link rel="stylesheet" href="../../css/partials/library.css">
     <link rel="stylesheet" href="../../css/student/personalPage.css">
     <link rel="stylesheet" href="../../css/partials/footer.css">
+    <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -31,14 +34,21 @@
                 </button>
             </div>
             <div class="logout">
-                <button type="submit" class="btn button-navbar-save">Logout</button>
+                <button href="#myModalLogout" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Logout</button>
             </div>
         </div>
         <div class="col">
             <form>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Nickname</label>
-                    <input type="email" class="form-control" placeholder="Nickname" id="email" aria-describedby="emailHelp">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="E-mail" id="email" aria-describedby="emailHelp">
+                    <button class="modify">
+                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="nickname" class="form-label">Nickname</label>
+                    <input type="email" class="form-control" placeholder="Nickname" id="nickname" aria-describedby="emailHelp">
                     <button class="modify">
                         <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
                     </button>
@@ -75,10 +85,24 @@
         </div>
     </div>
     <div class="save">
-        <button type="submit" class="btn button-navbar-save">Salva le modifiche</button>
+        <button href="#myModal" data-toggle="modal"  type="submit" class="trigger-btn btn button-navbar-save">Salva le modifiche</button>
     </div>
 </div>
 <!-- End Anagrafica -->
+
+<!-- Popup Success -->
+<div w3-include-html="../partials/popupSuccess.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Popup Success -->
+
+<!-- Popup Logout -->
+<div w3-include-html="../partials/popupLogout.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Popup Logout -->
 
 <!-- Footer -->
 <div w3-include-html="../partials/footer.html"></div>
