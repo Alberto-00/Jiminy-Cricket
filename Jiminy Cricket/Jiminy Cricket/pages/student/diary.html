@@ -7,6 +7,7 @@
   <script src="../../js/bootstrap/bootstrap.min.js"></script>
   <script src="../../js/jquery/jquery.js"></script>
   <script src="../../js/partials/lib.js"></script>
+  <script src="../../js/partials/popup.js"></script>
   <link rel="stylesheet" href="../../css/partials/navbar.css">
   <link rel="stylesheet" href="../../css/font/stylesheet.css">
   <link rel="stylesheet" href="../../css/partials/library.css">
@@ -26,7 +27,7 @@
   <div class="row">
     <div class="col">
       <div class="noSave">
-        <button type="submit" class="btn button-navbar-save">Esci senza salvare</button>
+        <button href="#myModalExit" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Esci senza salvare</button>
       </div>
     </div>
 
@@ -44,24 +45,19 @@
   </div>
 </div>
 
-<div id="myModal" class="modal" style="transition: 0.4s">
-  <div class="modal-dialog modal-confirm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="icon-box">
-          <img src="../../img/check-solid.svg" class="white" alt="check">
-        </div>
-        <h4 class="modal-title">Fantastico!</h4>
-      </div>
-      <div class="modal-body">
-        <p class="text-center">Il salvataggio è andato a buon fine.</p>
-      </div>
-      <div class="modal-footer">
-        <button class="hover btn btn-success btn-block" data-dismiss="modal">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Popup Success -->
+<div w3-include-html="../partials/popupSuccess.html"></div>
+<script>
+  includeHTML();
+</script>
+<!-- End Popup Success -->
+
+<!-- Popup Error -->
+<div w3-include-html="../partials/popupError.html"></div>
+<script>
+  includeHTML();
+</script>
+<!-- End Popup Error -->
 
 <!-- Footer -->
 <div w3-include-html="../partials/footer.html"></div>
