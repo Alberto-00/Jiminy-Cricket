@@ -13,6 +13,8 @@
 textarea{
     resize: none;
     font-size: 25px!important;
+    border: 3px solid #CFC69F!important;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
 }
 
 textarea.form-control {
@@ -37,4 +39,20 @@ div.save{
 .button-navbar-save:hover{
     background-color: #B7DB99;
     transition: 0.3s;
+}
+
+.btn-group{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
+
+}
+
+.btn-secondary{
+    background-color: #fff;
+    color: #000;
+    border-width: 3px;
+    border-color: #CFC69F;
+}
+
+.btn-secondary:hover{
+    background-color: #5A7B5F;
 }
