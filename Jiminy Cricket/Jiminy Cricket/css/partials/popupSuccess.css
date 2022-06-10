@@ -114,16 +114,27 @@
     outline:0
 }
 
-.btn-success{
+.btn-success, .btn-error{
     padding: 11px 65px 11px 65px!important;
     font-weight: bold;
     box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
     font-size: 20px;
+}
+
+.btn-success{
     border-color: rgba(90, 123, 95, 0.72);
+}
+
+.btn-error{
+    border-color: rgba(129, 36, 36, 0.75);
 }
 
 .btn-success:hover{
     background-color: #89AB7C!important;
+}
+
+.btn-error:hover{
+    background-color: #CC6161!important;
 }
 
 .modal.fade .modal-dialog{
@@ -197,13 +208,15 @@
 }
 
 .modal-title{
-    margin:0;
+    margin: auto!important;
+    margin-bottom: -20px!important;
+    margin-top: 25px!important;
     line-height:1.42857143
 }
 
 .modal-body{
     position:relative;
-    padding:15px
+    padding-bottom: 0;
 }
 
 .modal-footer{
