@@ -5,6 +5,7 @@
   <title>Jiminy Cricket - Diario Studente</title>
   <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
   <script src="../../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../../js/jquery/jquery.js"></script>
   <script src="../../js/partials/lib.js"></script>
   <link rel="stylesheet" href="../../css/partials/navbar.css">
   <link rel="stylesheet" href="../../css/font/stylesheet.css">
@@ -36,10 +37,29 @@
         <textarea class="form-control" id="text" placeholder="Caro Diario, ..."></textarea>
       </div>
       <div class="save">
-        <button type="submit" class="btn button-navbar-save">Salva le modifiche</button>
+        <button href="#myModal" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Salva le modifiche</button>
       </div>
     </div>
     <!-- End Text Area -->
+  </div>
+</div>
+
+<div id="myModal" class="modal" style="transition: 0.4s">
+  <div class="modal-dialog modal-confirm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="icon-box">
+          <img src="../../img/check-solid.svg" class="white" alt="check">
+        </div>
+        <h4 class="modal-title">Fantastico!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Il salvataggio è andato a buon fine.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="hover btn btn-success btn-block" data-dismiss="modal">OK</button>
+      </div>
+    </div>
   </div>
 </div>
 
