@@ -5,18 +5,59 @@
     <title>Jiminy Cricket - HomePage</title>
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/jquery/jquery.js"></script>
+    <script src="../js/jquery/jquery-validate-plugin.js"></script>
     <script src="../js/partials/lib.js"></script>
-    <link rel="stylesheet" href="../css/partials/navbar.css">
+    <script src="../js/partials/autenticazione.js"></script>
     <link rel="stylesheet" href="../css/font/stylesheet.css">
     <link rel="stylesheet" href="../css/partials/library.css">
+    <link rel="stylesheet" href="../css/partials/autenticazione.css">
 </head>
 <body>
-<!-- Navbar -->
-<div w3-include-html="partials/navbar.html"></div>
-<script>
-    includeHTML();
-</script>
-<!-- End Navbar -->
+<form name="admin-login" id="login-in" class="login-form" action="${pageContext.request.contextPath}/autenticazione/" method="post">
+    <div class="login-form-logo-container">
+        <img class="login-form-logo" src="../img/logo.png" alt="logo">
+    </div>
+    <div class="login-form-content">
+        <div class="login-form-header">
+            <label>Accedi al tuo account</label>
+        </div>
+        <input class="login-form-input" type='email' name="email" id="email" placeholder="Email Universitaria / Username" required autocomplete="off">
+        <input class="login-form-input" type="password" name="password" id="password" placeholder="Password" required autocomplete="off">
+        <button class="login-form-button" type="submit">Accedi</button>
+        <span class="registrati">Sei un Docente e non hai le credenziali?</span>
+        <button class="login-form-button" type="button" id="sign-in">Registrati</button>
+    </div>
+</form>
 
+<!--REGISTRAZIONE-->
+<div class="register">
+    <form name="admin-registry" id="login-up" class="login-form none" action="${pageContext.request.contextPath}/autenticazione/registrazione" method="post">
+        <div class="login-form-logo-container">
+            <img class="login-form-logo" src="../img/logo.png" alt="logo">
+        </div>
+        <div class="login-form-content">
+            <div class="login-form-header">
+                <label>Registrati per la prima volta</label>
+            </div>
+            <input class="login-form-input" type='text' name="nome" id="nome" placeholder="Nome" required autocomplete="off">
+            <input class="login-form-input" type='text' name="cognome" id="cognome" placeholder="Cognome" required autocomplete="off">
+            <input class="login-form-input" type='email' name="email2" id="email2" placeholder="Email Universitaria" required autocomplete="off">
+            <input class="login-form-input" type="password" name="password2" id="password2" placeholder="Password" required autocomplete="off">
+            <button class="login-form-button" type="submit">Registrati</button>
+            <span class="formato_passw">Formato della password:</span>
+            <ul>
+                <li>lunghezza minima di 8 caratteri</li>
+                <li>lunghezza massima di 50 caratteri</li>
+                <li>deve contenere almeno una lettera minuscola</li>
+                <li>deve contenere almeno una lettera Maiuscola</li>
+                <li>deve contenere almeno un numero</li>
+                <li>deve contenere almeno uno dei seguenti caratteri speciali: ={}+çò°àù§èé#@$!%€*?&:,;'._<>|-</li>
+            </ul>
+            <span class="registrati">Hai già un account?</span>
+            <button class="login-form-button" type="button" id="sign-up">Accedi</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>

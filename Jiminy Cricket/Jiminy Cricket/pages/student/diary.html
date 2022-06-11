@@ -7,12 +7,15 @@
   <script src="../../js/bootstrap/bootstrap.min.js"></script>
   <script src="../../js/jquery/jquery.js"></script>
   <script src="../../js/partials/lib.js"></script>
+  <script src="../../js/partials/calendar.js" defer></script>
+  <script src="../../js/partials/popup.js"></script>
   <link rel="stylesheet" href="../../css/partials/navbar.css">
   <link rel="stylesheet" href="../../css/font/stylesheet.css">
   <link rel="stylesheet" href="../../css/partials/library.css">
   <link rel="stylesheet" href="../../css/partials/footer.css">
   <link rel="stylesheet" href="../../css/student/diary.css">
   <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
+  <link rel="stylesheet" href="../../css/partials/calendar.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -23,15 +26,74 @@
 <!-- End Navbar -->
 
 <div class="container">
+  <h1 class="title font-title">Il mio Diario</h1>
   <div class="row">
     <div class="col">
+      <!-- Calendar -->
+      <div id="body" class="calendar light">
+        <div class="calendar-header">
+          <span class="month-picker" id="month-picker">Giugno</span>
+          <div class="year-picker">
+            <span class="year-change" id="prev-year">
+              <pre><</pre>
+            </span>
+            <span id="year">2022</span>
+            <span class="year-change" id="next-year">
+              <pre>></pre>
+            </span>
+          </div>
+        </div>
+        <div class="calendar-body">
+          <div class="calendar-week-day">
+            <div>Dom</div>
+            <div>Lun</div>
+            <div>Mar</div>
+            <div>Mer</div>
+            <div>Gio</div>
+            <div>Ven</div>
+            <div>Sab</div>
+          </div>
+          <div class="calendar-days"></div>
+        </div>
+        <div class="calendar-footer">
+          <div class="toggle">
+            <span>Dark Mode</span>
+            <div class="dark-mode-switch">
+              <div class="dark-mode-switch-ident"></div>
+            </div>
+          </div>
+        </div>
+        <div class="month-list"></div>
+      </div>
+      <!-- End Calendar -->
       <div class="noSave">
-        <button type="submit" class="btn button-navbar-save">Esci senza salvare</button>
+        <button href="#myModalExit" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Esci senza salvare</button>
       </div>
     </div>
 
-    <!-- Text Area -->
+
     <div class="col">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button id="bold" type="button" class="btn btn-secondary">
+          <img style="width: 24px" src="../../img/bold.svg">
+        </button>
+        <button id="italic" type="button" class="btn btn-secondary">
+          <img src="../../img/italic.svg">
+        </button>
+        <button id="underlined" type="button" class="btn btn-secondary">
+          <img style="width: 24px" src="../../img/underlined.svg">
+        </button>
+        <button id="left" type="button" class="btn btn-secondary">
+          <img src="../../img/left.svg">
+        </button>
+        <button id="center" type="button" class="btn btn-secondary">
+          <img src="../../img/center.svg">
+        </button>
+        <button id="right" type="button" class="btn btn-secondary">
+          <img src="../../img/right.svg">
+        </button>
+      </div>
+      <!-- Text Area -->
       <div class="form-group">
         <label for="text"></label>
         <textarea class="form-control" id="text" placeholder="Caro Diario, ..."></textarea>
@@ -39,35 +101,30 @@
       <div class="save">
         <button href="#myModal" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Salva le modifiche</button>
       </div>
+      <!-- End Text Area -->
     </div>
-    <!-- End Text Area -->
   </div>
 </div>
 
-<div id="myModal" class="modal" style="transition: 0.4s">
-  <div class="modal-dialog modal-confirm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="icon-box">
-          <img src="../../img/check-solid.svg" class="white" alt="check">
-        </div>
-        <h4 class="modal-title">Fantastico!</h4>
-      </div>
-      <div class="modal-body">
-        <p class="text-center">Il salvataggio è andato a buon fine.</p>
-      </div>
-      <div class="modal-footer">
-        <button class="hover btn btn-success btn-block" data-dismiss="modal">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Popup Success -->
+<div w3-include-html="../partials/popupSuccess.html"></div>
+<script>
+  includeHTML();
+</script>
+<!-- End Popup Success -->
+
+<!-- Popup Error -->
+<div w3-include-html="../partials/popupError.html"></div>
+<script>
+  includeHTML();
+</script>
+<!-- End Popup Error -->
 
 <!-- Footer -->
 <div w3-include-html="../partials/footer.html"></div>
 <script>
   includeHTML();
 </script>
-<!-- End Footer-->
+<!-- End Footer -->
 </body>
 </html>
