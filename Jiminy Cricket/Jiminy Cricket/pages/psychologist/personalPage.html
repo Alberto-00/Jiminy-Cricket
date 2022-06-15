@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
     <script src="../../js/bootstrap/bootstrap.min.js"></script>
     <script src="../../js/partials/lib.js"></script>
+    <script src="../../js/jquery/jquery.js"></script>
     <link rel="stylesheet" href="../../css/partials/navbar.css">
     <link rel="stylesheet" href="../../css/partials/footer.css">
     <link rel="stylesheet" href="../../css/font/stylesheet.css">
     <link rel="stylesheet" href="../../css/partials/library.css">
-    <link rel="stylesheet" href="../../css/psycologist/personalPage.css">
+    <link rel="stylesheet" href="../../css/psychologist/personalPage.css">
+
+
 </head>
 <body>
 <!-- Navbar -->
@@ -50,14 +53,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
-                    <input type="password" placeholder="Nome" class="form-control" id="nome">
+                    <input type="text" placeholder="Nome" class="form-control" id="nome">
                     <button class="modify">
                         <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
                     </button>
                 </div>
                 <div class="mb-3">
                     <label for="contatto1" class="form-label">Contatto 1</label>
-                    <input type="password" placeholder="Contatto 1" class="form-control" id="contatto1">
+                    <input type="text" placeholder="Contatto 1" class="form-control" id="contatto1">
                     <button class="modify">
                         <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
                     </button>
@@ -80,27 +83,66 @@
 </div>
 <br>
 <hr>
-
-<div class="pazienti container">
+<div class="container">
     <p>
         Pazienti
     </p>
-    <div class="col">
-        <form>
-            <div class="mb-3 div-paziente">
-                <div>
-                    <input type="file" hidden>
-                    <button class="photo-paziente">
-                        <img style="width: 69%;" src="../../img/user.png" alt="pencil">
-                    </button>
-                </div>
+</div>
+
+<div class="container" id="pazienti">
+
+    <div class="row div-paziente" id="divPaziente">
+        <div class="mb-3  col-sm" id="photoP">
+            <div class="form-floating mb-3 " >
+                <input type="file" hidden>
+                <button class="photo-paziente">
+                    <img style="width: 100%;" src="../../img/user.png" alt="user">
+                </button>
             </div>
-        </form>
+        </div>
+        <div class="mb-3 col-sm anagrafica">
+            <div>
+                <input type="text" class="form-control" placeholder="Nome" value="Alice" style="width: 200px" readonly>
+            </div>
+            <div>
+                <input type="text" class="form-control" placeholder="Cognome" value="Rossi" style="width: 200px" readonly>
+            </div>
+            <div>
+                <input type="text" class="form-control"placeholder="Nickname" value="Stregatto" style="width: 200px" readonly>
+            </div>
+        </div>
+        <div class="mb-3 col-sm">
+            <textarea placeholder="Le mie note . . ." cols="80" rows="10"></textarea>
+        </div>
+        <div class="mb-3 col-sm">
+            <button class="chat-button">
+                <img style="width: 30%;" src="../../img/chat.svg" alt="chat">
+            </button>
+        </div>
+        <br>
+        <br>
     </div>
+    <br>
+    <br>
+
 </div>
 <div w3-include-html="../partials/footer.html"></div>
 <script>
     includeHTML();
+</script>
+<script>
+    $(document).ready(function() {
+        function checkMyDiv() {
+            if($(window).width() <= 980) {
+                $('#photoP').remove();
+                $('#divPaziente').removeClass('row');
+            }
+        }
+        $(window).resize(function() {
+            checkMyDiv(true);
+        });
+        checkMyDiv(false);
+    });
 </script>
 </body>
 </html>
