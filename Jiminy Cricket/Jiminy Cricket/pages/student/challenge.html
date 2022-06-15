@@ -2,9 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Jiminy Cricket - Challenge</title>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/jquery/jquery.js"></script>
+    <script src="../../js/partials/lib.js"></script>
+    <script src="../../js/partials/popup.js"></script>
+    <link rel="stylesheet" href="../../css/partials/navbar.css">
+    <link rel="stylesheet" href="../../css/font/stylesheet.css">
+    <link rel="stylesheet" href="../../css/partials/library.css">
+    <link rel="stylesheet" href="../../css/student/personalPage.css">
+    <link rel="stylesheet" href="../../css/partials/footer.css">
+    <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
+    <link rel="stylesheet" href="../../css/student/challenge.css">
 </head>
 <body>
+<!-- Navbar -->
+<div w3-include-html="../partials/navbarPersonas.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Navbar -->
 
+<h1 class="title font-title " style="margin-left: 3rem!important;margin-top: 3rem!important;">Challenge</h1>
+<div style="margin-bottom: 10%">
+       <div class="bg-white mt-5 mx-5 d-flex flex-column box br-t-l br-t-r br-b-l">
+           <p class="fs-5 padding-l">Urlo di Munch</p>
+           <p class="padding-l">In un momento di rabbia e nervoso, per scaricare la tensione, urla tre volte appoggiando la faccia su un cuscino. </p>
+       </div>
+       <div class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox">
+           <img id="clock1" class="filterColorDark" src="../../img/challenge-icons/clock.svg" style="width: 40px;height: 40px; " onclick="changeImage(2)">
+           <img id="emoji1" class="filterColorDark" src="../../img/challenge-icons/scared.png" style="width: 24px;height: 24px;margin-top: 2px;" onclick="switchColor(1)">
+           <img id="emoji2" class="filterColorDark" src="../../img/challenge-icons/icons8-arrabbiato-32.png" style="margin-top: 2px;" onclick="switchColor(2)">
+           <img id="emoji3" class="filterColorDark" src="../../img/challenge-icons/sad.svg" style="width: 27px;height: 27px;margin-top: 1.5px;" onclick="switchColor(3)">
+           <img id="emoji4" class="filterColorDark" src="../../img/challenge-icons/smile.svg" style="width: 27px;height: 27px;margin-top: 1.5px; " onclick="switchColor(4)">
+       </div>
+   </div>
+</div>
+
+<div style="margin-bottom: 10%">
+    <div class="bg-white mt-5 mx-5 d-flex flex-column box br-t-l br-t-r br-b-l">
+        <p class="fs-5 padding-l">Come il vento</p>
+        <p class="padding-l">Quando avverti l'ansia che sale, imita il rumore del vento con le labbra, facendo dei respiri molto profondi.</p>
+    </div>
+    <div class="bg-white box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox">
+        <img id="clock2" class="filterColorDark" src="../../img/challenge-icons/clock.svg" style="width: 40px;height: 40px; " onclick="changeImage(2)">
+        <img id="emoji5" class="filterColorDark" src="../../img/challenge-icons/scared.png" style="width: 24px;height: 24px;margin-top: 2px;" onclick="switchColor(5)">
+        <img id="emoji6" class="filterColorDark" src="../../img/challenge-icons/icons8-arrabbiato-32.png" style="margin-top: 2px;" onclick="switchColor(6)">
+        <img id="emoji7" class="filterColorDark" src="../../img/challenge-icons/sad.svg" style="width: 27px;height: 27px;margin-top: 1.5px;" onclick="switchColor(7)">
+        <img id="emoji8" class="filterColorDark" src="../../img/challenge-icons/smile.svg" style="width: 27px;height: 27px;margin-top: 1.5px; " onclick="switchColor(8)">
+    </div>
+</div>
+
+<div style="margin-bottom: 10%">
+    <div class="bg-white mt-5 mx-5 d-flex flex-column box br-t-l br-t-r br-b-l">
+        <p class="fs-5 padding-l">Aggiungi un posto a tavola</p>
+        <p class="padding-l">Invita un tuo compagno a sedersi vicino a te durante la ricreazione.</p>
+    </div>
+    <div class="bg-white box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox">
+        <img id="clock3" class="filterColorDark" src="../../img/challenge-icons/clock.svg" style="width: 40px;height: 40px; " onclick="changeImage(3)">
+        <img id="emoji9" class="filterColorDark" src="../../img/challenge-icons/scared.png" style="width: 24px;height: 24px;margin-top: 2px;" onclick="switchColor(9)">
+        <img id="emoji10" class="filterColorDark" src="../../img/challenge-icons/icons8-arrabbiato-32.png" style="margin-top: 2px;" onclick="switchColor(10)">
+        <img id="emoji11" class="filterColorDark" src="../../img/challenge-icons/sad.svg" style="width: 27px;height: 27px;margin-top: 1.5px;" onclick="switchColor(11)">
+        <img id="emoji12" class="filterColorDark" src="../../img/challenge-icons/smile.svg" style="width: 27px;height: 27px;margin-top: 1.5px; " onclick="switchColor(12)">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div w3-include-html="../partials/footer.html"></div>
+<script>
+    includeHTML();
+    function changeImage(i){
+        document.getElementById("clock"+i).src = "../../img/challenge-icons/check.svg";
+    }
+    var addOrRemove=true;
+    function switchColor(i){
+        if ( addOrRemove ) {
+            $("#emoji"+i).removeClass( "filterColorDark" );
+            $("#emoji"+i).addClass( "filterColorLight" );
+            addOrRemove=false;
+        } else {
+            $("#emoji"+i).removeClass( "filterColorLight" );
+            $("#emoji"+i).addClass( "filterColorDark" );
+            addOrRemove=true;
+        }
+    }
+</script>
+<!-- End Footer-->
 </body>
 </html>

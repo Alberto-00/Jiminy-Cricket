@@ -1,0 +1,45 @@
+.br-t-l {
+    border-top-left-radius: 10pt;
+}
+
+.br-t-r{
+    border-top-right-radius: 10pt;
+}
+.br-b-l{
+    border-bottom-left-radius: 10pt;
+}
+.br-b-r{
+    border-bottom-right-radius: 10pt;
+}
+
+.padding-l{
+    padding-left: 10pt;
+}
+
+.box{
+    border: 3px solid  #CFC69F;
+    position: relative;
+}
+
+p:first-child{
+    border-bottom: 3px solid  #CFC69F;
+}
+
+.underBox{
+    margin-right:3rem!important;
+    width: fit-content;
+    float:right!important;
+}
+
+.underBox > *{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.filterColorDark{
+    filter: invert(46%) sepia(25%) saturate(406%) hue-rotate(78deg) brightness(91%) contrast(91%);
+}
+
+.filterColorLight{
+    filter: invert(95%) sepia(63%) saturate(429%) hue-rotate(31deg) brightness(92%) contrast(85%);
+}
