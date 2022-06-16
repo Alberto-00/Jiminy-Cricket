@@ -10,17 +10,6 @@
     background-color: #CFC69F;
 }
 
-textarea{
-    resize: none;
-    font-size: 25px!important;
-    border: 3px solid #CFC69F!important;
-    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
-}
-
-textarea.form-control {
-    min-height: calc(17.5em + 0.75rem + 2px);
-}
-
 div.save{
     float: right;
     margin-top: 20px
@@ -46,7 +35,6 @@ div.save{
     border-width: 3px;
     border-color: #CFC69F;
 }
-
 
 .btn-group{
     box-shadow: 0 8px 15px rgb(0 0 0 / 25%);

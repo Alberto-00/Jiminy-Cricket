@@ -1,0 +1,56 @@
+.wysiwyg-controls [data-role=bold] {
+  font-weight: bold;
+}
+.wysiwyg-controls [data-role=italic] {
+  font-style: italic;
+}
+.wysiwyg-controls [data-role=underline] {
+  text-decoration: underline;
+}
+
+[class^=menu], [class^=menu]:after, [class^=menu]:before {
+  position: relative;
+  top: 48%;
+  display: block;
+  width: 65%;
+  height: 2px;
+  margin: 0 auto;
+  background: #ADB5B9;
+}
+[class^=menu]:before {
+  content: "";
+  top: -5px;
+  width: 80%;
+}
+[class^=menu]:after {
+  content: "";
+  top: 3px;
+  width: 80%;
+}
+
+.menu-left:before, .menu-left:after {
+  margin-right: 4px;
+}
+
+.menu-right:before, .menu-right:after {
+  margin-left: 4px;
+}
+
+.wysiwyg-content {
+  font-size: 20px !important;
+  border: 3px solid #CFC69F !important;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+  width: 35.6em;
+  min-height: 29em;
+  height: auto;
+  padding: 12px;
+  outline: none;
+  margin-top: 1em;
+  background: #F2F4F6;
+}
+
+@media (max-width: 1399px) {
+  .wysiwyg-content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=diaryStyle.css.map */

@@ -90,3 +90,10 @@ dark_mode_toggle.onclick = () => {
     document.querySelector('#body').classList.toggle('light')
     document.querySelector('#body').classList.toggle('dark')
 }
+
+$(document).ready(function (){
+    $('.calendar-day-hover').click(function (){
+        $('.calendar-day-hover').removeClass('curr-date')
+        $(this).addClass('curr-date')
+    })
+})

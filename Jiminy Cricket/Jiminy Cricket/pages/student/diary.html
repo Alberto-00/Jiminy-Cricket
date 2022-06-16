@@ -9,11 +9,13 @@
   <script src="../../js/partials/lib.js"></script>
   <script src="../../js/partials/calendar.js" defer></script>
   <script src="../../js/partials/popup.js"></script>
+  <script src="../../js/student/diary.js"></script>
   <link rel="stylesheet" href="../../css/partials/navbar.css">
   <link rel="stylesheet" href="../../css/font/stylesheet.css">
   <link rel="stylesheet" href="../../css/partials/library.css">
   <link rel="stylesheet" href="../../css/partials/footer.css">
   <link rel="stylesheet" href="../../css/student/diary.css">
+  <link rel="stylesheet" href="../../css/student/diaryStyle.css">
   <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
   <link rel="stylesheet" href="../../css/partials/calendar.css">
 </head>
@@ -71,38 +73,36 @@
       </div>
     </div>
 
-
     <div class="col">
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button id="bold" type="button" class="btn btn-secondary">
+      <div class="btn-group" id="btn" role="group" aria-label="Basic example">
+        <button data-role='bold' id="bold" type="button" class="btn btn-secondary">
           <img style="width: 24px" src="../../img/bold.svg" alt="bold">
         </button>
-        <button id="italic" type="button" class="btn btn-secondary">
+        <button id="italic" data-role='italic' type="button" class="btn btn-secondary">
           <img src="../../img/italic.svg" alt="italic">
         </button>
-        <button id="underlined" type="button" class="btn btn-secondary">
+        <button id="underlined" data-role='underline' type="button" class="btn btn-secondary">
           <img style="width: 24px" src="../../img/underlined.svg" alt="underlined">
         </button>
-        <button id="left" type="button" class="btn btn-secondary">
+        <button id="left" data-role='justifyleft' type="button" class="btn btn-secondary">
           <img src="../../img/left.svg" alt="left">
         </button>
-        <button id="center" type="button" class="btn btn-secondary">
+        <button id="center" data-role='justifycenter' type="button" class="btn btn-secondary">
           <img src="../../img/center.svg" alt="center">
         </button>
-        <button id="right" type="button" class="btn btn-secondary">
+        <button id="right" data-role='justifyright' type="button" class="btn btn-secondary">
           <img src="../../img/right.svg" alt="right">
         </button>
       </div>
       <!-- Text Area -->
       <div class="form-group">
-        <label for="text"></label>
-        <textarea class="form-control" id="text" placeholder="Caro Diario, ..."></textarea>
+        <div class="wysiwyg-content" contenteditable></div>
       </div>
       <div class="save">
         <button href="#myModal" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Salva le modifiche</button>
       </div>
-      <!-- End Text Area -->
     </div>
+      <!-- End Text Area -->
   </div>
 </div>
 
