@@ -1,87 +1,10 @@
-input{
-    letter-spacing: 1px;
-}
-
-.mb-3 {
-    height: 5.5em;
-    margin-bottom: 0 !important;
-}
-
-.button-navbar-save{
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 20px;
-    background-color: #CFC69F;
-    border-color: rgba(36, 53, 40, 0.55);
-    border-width: 1px;
-    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
-}
-
-.button-navbar-save:hover{
-    background-color: #B7DB99;
-    transition: 0.3s;
-}
-
-div.save{
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-}
-
-div.logout{
-    margin-top: 45px;
-    margin-left: 3em;
-}
-
-input[type="submit"] {
-    margin-left: -50px;
-    height: 25px;
-    width: 50px;
-    background: blue;
-    color: white;
-    border: 0;
-    -webkit-appearance: none;
-}
-
-.modify {
-    position: relative;
-    top: -46.61px;
-    border-radius: 0 5px 5px 0;
-    left: 100%;
-    right: 0;
-    z-index: 2;
-    width: 10%;
-    height: 46px;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(90, 123, 95, 0.85);
-}
-
-.modify:hover{
-    background-color: rgba(90, 123, 95, 1);
-    transition: 0.3s;
-}
-
-.form-control{
-    padding: 0.675rem 0.75rem;
-    width: 100%;
-    border-radius: 5px 0 0 5px !important;
-}
-
-.photo{
-    border-radius: 30px;
-    background-color: #fff;
-    /*width: 45%;*/
-    max-width: 14em;
-    height: 16em;
-    border-color: #CFC69F;
-    border-width: 5px;
-    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
-}
-
 p{
     font-family: "Creattion Demo";
     font-size: 75px;
+}
+
+.textArea{
+
 }
 
 .paragraph-pazienti{
@@ -103,6 +26,7 @@ hr{
 }
 
 .div-paziente{
+    overflow: hidden;
     background-color: #5A7B5F;
     display: flex;
     align-items: center;
@@ -125,20 +49,31 @@ hr{
 .photo-paziente{
     border-radius: 30px;
     background-color: #fff;
-
-    width: 6.5em;
-    height: 6.5em;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    width: 100%;
     border-color: #CFC69F;
     border-width: 5px;
     box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
-    height: fit-content;
+}
+
+.info{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
+    border: 3px solid #CFC69F;
+    border-radius: 5px;
+    outline: none;
 }
 
 textarea{
     height: 5em;
     resize: none;
-
+    outline: none;
     padding-right:100px;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
+    border: 3px solid #CFC69F;
+    border-radius: 5px;
 }
 
 .modify-button{
@@ -165,42 +100,12 @@ textarea{
     background-color: #C0DDA8;
 }
 
-
-
-
 @media (max-width: 992px) {
-    .row{
-        flex-direction: column;
-    }
-    .photo{
-        margin-left: 12em;
-    }
-    .logout button{
-        margin-left: 12.5em;
-        margin-bottom: 2em;
-    }
-    .form-control{
-        width: 90%;
-    }
-    .modify{
-        left: 90%;
-    }
     textarea{
         width: 100%;
         margin-right: 30px;
     }
     .modify-button{
         margin-left: 100px;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .photo{
-        margin-left: 5em;
-    }
-    .logout button{
-        margin-left: 5.5em;
-        margin-bottom: 2em;
     }
 }
