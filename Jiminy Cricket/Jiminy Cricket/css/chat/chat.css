@@ -1,0 +1,58 @@
+#topBar{
+    background-color: #5A7B5F;
+    width: available;
+    height: 10em;
+    display: flex;
+    text-align: center;
+}
+
+#topBar>p{
+    padding-left: 35%;
+}
+
+#photo-paziente{
+    border-radius: 30px;
+    background-color: #fff;
+    width: 6.5em;
+    height: 6.5em;
+    border-color: #CFC69F;
+    border-width: 5px;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 25%);
+    height: fit-content;
+    margin-top: 2.5em;
+    margin-left: 5%;
+}
+
+#messageArea{
+    border-style: solid;
+    box-shadow: 0 -3px 10px 3px rgb(0 0 0 / 20%);
+    opacity: revert;
+    border-radius: 15px 15px 15px 15px;
+    border-color: #CFC69F;
+    height: 10vh;
+}
+
+#sendButton{
+    background-color: #5A7B5F ;
+}
+#sendSVG{
+    filter: invert(89%) sepia(18%) saturate(454%) hue-rotate(7deg) brightness(91%) contrast(81%);
+}
+
+
+.font-text{
+    font-size: 18px;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-family: "Apple Garamond";
+    color: #B7DB99;
+}
+
+@media (max-width: 992px) {
+    footer{
+        position: relative;
+    }
+    .font-text{
+        font-size: 15px;
+    }
+}

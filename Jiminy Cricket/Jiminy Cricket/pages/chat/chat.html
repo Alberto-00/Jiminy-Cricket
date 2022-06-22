@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Jiminy Cricket - Chat</title>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/partials/lib.js"></script>
+    <script src="../../js/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="../../css/font/stylesheet.css">
+    <link rel="stylesheet" href="../../css/partials/library.css">
+    <link rel="stylesheet" href="../../css/chat/chat.css">
+</head>
+<body>
+<div>
+    <div id="topBar" class="sticky-top d-flex flex-row justify-content-around align-items-center">
+        <div class="p-2">
+            <button id="photo-paziente">
+                <img style="width: 100%;" src="../../img/user.png" alt="user">
+            </button>
+        </div>
+        <div class="p-2">
+            <div id="text">
+                <p>Alice Rossi</p>
+            </div>
+        </div>
+        <div class="p-2">
+            <p>Chiudi</p>
+        </div>
+    </div>
+    <div class="container d-flex flex-wrap-reverse" id="1">
+        <p></p>
+    </div>
+    <div class="fixed-bottom" id="messageArea">
+        <div class="input-group mb-3 h-100">
+            <input type="text" class="form-control fs-1" placeholder="Invia messaggio" id="inputText">
+            <button class="input-group-append " id="sendButton">
+                <img id="sendSVG" style="width: 35%;" src=" ../../img/send.svg" alt="user">
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(() => {
+        $('#sendButton').click(()=>{
+            let text = $("#inputText").val();
+            $("#inputText").val("");
+            $("#1").append("<b>"+text+"</b>");
+        });
+    });
+</script>
+</html>
