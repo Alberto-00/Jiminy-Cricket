@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad5c91c4-8495-4c08-b624-ca078fa807be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/css/student/challenge.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/icons8-arrabbiato-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/sad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/scared.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/smile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/css/psychologist/challenge.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/downarrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/pages/psychologist/challenge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jiminy Cricket/css/student/challenge.css" beforeDir="false" afterPath="$PROJECT_DIR$/Jiminy Cricket/css/student/challenge.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jiminy Cricket/pages/student/challenge.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jiminy Cricket/pages/student/challenge.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,26 +37,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Jiminy Cricket/css/psychologist" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\utente\Desktop\Progetto-IUM\Jiminy Cricket\Jiminy Cricket\css\psychologist" />
+      <recent name="C:\Users\utente\Desktop\Progetto-IUM\Jiminy Cricket\Jiminy Cricket\pages\psychologist" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\utente\Desktop\Progetto-IUM\Jiminy Cricket\Jiminy Cricket\img\challenge-icons" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,6 +59,8 @@
       <updated>1654811281736</updated>
       <workItem from="1654811283177" duration="13000" />
       <workItem from="1655216816695" duration="14539000" />
+      <workItem from="1655633233773" duration="3222000" />
+      <workItem from="1655838240235" duration="8689000" />
     </task>
     <servers />
   </component>

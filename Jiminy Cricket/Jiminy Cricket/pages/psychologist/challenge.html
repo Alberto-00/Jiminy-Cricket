@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jiminy Cricket - Challenge</title>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/jquery/jquery.js"></script>
+    <script src="../../js/partials/lib.js"></script>
+    <script src="../../js/partials/popup.js"></script>
+    <link rel="stylesheet" href="../../css/partials/navbar.css">
+    <link rel="stylesheet" href="../../css/font/stylesheet.css">
+    <link rel="stylesheet" href="../../css/partials/library.css">
+    <link rel="stylesheet" href="../../css/student/personalPage.css">
+    <link rel="stylesheet" href="../../css/partials/footer.css">
+    <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
+    <link rel="stylesheet" href="../../css/psychologist/challenge.css">
+</head>
+<body>
+<!-- Navbar -->
+<div w3-include-html="../partials/navbarPersonas.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Navbar -->
+
+<h1 class="title font-title " style="margin-left: 3rem!important;margin-top: 3rem!important;">Le mie Challenge</h1>
+<div style="margin-bottom: 10%">
+       <div class="bg-white mt-5 mx-5 d-flex flex-column box br-t-l br-t-r br-b-l">
+           <input type="text" class="fs-4 padding-l br-t-l br-t-r bottom-line" placeholder="Titolo">
+           <textarea class="br-b-l padding-l" placeholder="Inserisci una descrizione" rows="5"></textarea>
+       </div>
+       <div class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox">
+           <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important;" onclick="addChallenge()">Aggiungi</p>
+       </div>
+   </div>
+</div>
+
+<hr>
+
+<div style="margin-bottom: 10%">
+    <div id="challenge1" class="bg-white mt-5 mx-5 d-flex flex-column  box br-t-l br-t-r br-b-l br-b-r">
+        <div class="d-flex bottom-line">
+            <div class="p-2" style="margin-right: auto;width: 100%">
+                <input id="titolo1" type="text" value="Urlo di Munch" readonly>
+            </div>
+            <div class="left-line">
+                <div class="p-2">
+                    <img id="pencil1" class="filterColorDark" src="../../img/challenge-icons/edit.svg" onclick="edit(1)">
+                </div>
+            </div>
+            <div class="left-line">
+                <div class="p-2">
+                    <img id="downArrow1" class="filterColorDark " src="../../img/challenge-icons/downarrow.png" onclick="showMore(1)">
+                </div>
+            </div>
+        </div>
+        <input type="text" id="content1"class="padding-l br-b-l br-b-r" value="In un momento di rabbia e nervoso, per scaricare la tensione, urla tre volte appoggiando la faccia su un cuscino. " readonly>
+        <input type="text" id="showMore1" class="padding-l br-b-l br-b-r" style="display: none" value="Ce la puoi fare!" readonly>
+    </div>
+    <div id="save1" class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox d-none" onclick="saveChanges(1)">
+        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; ">Salva</p>
+    </div>
+</div>
+
+<!--
+<div id="challengeContainer" class="d-none" style="margin-bottom: 10%">
+    <div id="challenge" class="bg-white mt-5 mx-5 d-flex flex-column  box br-t-l br-t-r br-b-l br-b-r">
+        <div class="d-flex bottom-line">
+            <div class="p-2" style="margin-right: auto;width: 100%">
+                <input id="titolo" type="text" value="" readonly>
+            </div>
+            <div class="left-line">
+                <div class="p-2">
+                    <img id="pencil" class="filterColorDark" src="../../img/challenge-icons/edit.svg">
+                </div>
+            </div>
+            <div class="left-line">
+                <div class="p-2">
+                    <img id="downArrow" class="filterColorDark " src="../../img/challenge-icons/downarrow.png" >
+                </div>
+            </div>
+        </div>
+        <input type="text" id="content"class="padding-l br-b-l br-b-r" value="" readonly>
+        <input type="text" id="showMore" class="padding-l br-b-l br-b-r" style="display: none" value="" readonly>
+    </div>
+    <div id="save" class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox d-none">
+        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; ">Salva</p>
+    </div>
+</div>
+-->
+
+<div id="limit"></div>
+
+
+
+
+
+
+
+<!-- Footer -->
+<div w3-include-html="../partials/footer.html"></div>
+<script>
+    includeHTML();
+    function changeImage(i){
+        document.getElementById("clock"+i).src = "../../img/challenge-icons/check.svg";
+    }
+    var addOrRemove=true;
+    function switchColor(i){
+        if ( addOrRemove ) {
+            $("#emoji"+i).removeClass( "filterColorDark" );
+            $("#emoji"+i).addClass( "filterColorLight" );
+            addOrRemove=false;
+        } else {
+            $("#emoji"+i).removeClass( "filterColorLight" );
+            $("#emoji"+i).addClass( "filterColorDark" );
+            addOrRemove=true;
+        }
+    }
+</script>
+<!-- End Footer-->
+</body>
+<script>
+    var i=3;
+
+    var show=true;
+    function showMore(i){
+        if(show){
+            $("#downArrow"+i).addClass("rotated");
+            $("#showMore"+i).show();
+            show=false;
+        }
+        else{
+            $("#downArrow"+i).removeClass("rotated");
+            $("#showMore"+i).hide();
+            show=true;
+        }
+    }
+
+    var editable=true;
+    function edit(i){
+        if(editable){
+            $("#pencil"+i).addClass("speculated");
+            $("#challenge"+i).removeClass("br-b-r");
+            $("#save"+i).removeClass("d-none");
+            $("#showMore"+i).show();
+
+            $("#titolo"+i).removeAttr("readonly");
+            $("#content"+i).removeAttr("readonly");
+            $("#showMore"+i).removeAttr("readonly");
+
+            editable=false;
+        }
+        else{
+
+        }
+    }
+
+    function saveChanges(i){
+        $("#pencil"+i).removeClass("speculated");
+        $("#challenge"+i).addClass("br-b-r");
+        $("#save"+i).addClass("d-none");
+        $("#showMore"+i).hide();
+
+        $("#titolo"+i).attr("readonly",true);
+        $("#content"+i).attr("readonly",true);
+        $("#showMore"+i).attr("readonly",true);
+
+        editable=true;
+
+        var text=$("#title"+i).val();
+        $("#title"+i).val(text);
+
+        text=$("#content"+i).val();
+        $("#content"+i).val(text);
+
+        text=$("#showMore"+i).val();
+        $("#showMore"+i).val(text);
+
+    }
+
+
+    /*
+    function addChallenge(){
+        i++;
+        console.log("a")
+        $("#challengeContainer").clone().insertBefore("#limit");
+    }*/
+    
+</script>
+</html>
