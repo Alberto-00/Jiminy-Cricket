@@ -48,6 +48,18 @@
     color: #B7DB99;
 }
 
+
+.message {
+    position:relative;
+    padding-right:2em;
+}
+.timestamp {
+    position:absolute;
+    padding-top: 1em;
+}
+#1{
+    Overflow-y:scroll;
+}
 @media (max-width: 992px) {
     footer{
         position: relative;
