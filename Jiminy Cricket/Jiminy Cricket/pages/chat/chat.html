@@ -44,14 +44,16 @@
     $(document).ready(() => {
         $('#sendSVG').click(()=>{
             let text = $("#inputText").val();
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes();
             $("#inputText").val("");
-            $("#1").append('<div class="d-flex p-2 " style="border: solid;margin-left: auto;">\n' +
+            $("#1").append('<div class="d-flex p-2 " id="messageDiv"  style="margin-left: auto;">\n' +
                 '            <p class="message">'+text+'</p>\n' +
-                '            <span class=""> 10:30</span>\n' +
+                '            <span class=""> '+time+'</span>\n' +
                 '        </div><br>');
-            $("#1").append('<div class="d-flex p-2 " style="border: solid;margin-right: auto;">\n' +
+            $("#1").append('<div class="d-flex p-2 " id="messageDiv" style="margin-right: auto;">\n' +
                 '            <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>\n' +
-                '            <span class=""> 10:30</span>\n' +
+                '            <span class=""> '+time+'</span>\n' +
                 '        </div><br>');
         });
 

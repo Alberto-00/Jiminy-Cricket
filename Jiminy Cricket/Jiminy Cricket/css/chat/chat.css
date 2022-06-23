@@ -13,6 +13,7 @@
 #text{
     font-family: "Apple Garamond";
     font-size: 50px;
+    font-weight: bold;
 }
 
 #photo-paziente{
@@ -70,6 +71,11 @@
 
 #cross:hover{
     filter: invert(24%) sepia(70%) saturate(4575%) hue-rotate(351deg) brightness(87%) contrast(137%);
+}
+
+#messageDiv{
+    background-color: white;
+    border: solid #5A7B5F;
 }
 
 @media (max-width: 992px) {
