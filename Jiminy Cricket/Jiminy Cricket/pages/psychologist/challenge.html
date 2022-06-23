@@ -27,31 +27,36 @@
 <h1 class="title font-title " style="margin-left: 3rem!important;margin-top: 3rem!important;">Le mie Challenge</h1>
 <div style="margin-bottom: 10%">
        <div class="bg-white mt-5 mx-5 d-flex flex-column box br-t-l br-t-r br-b-l">
-           <input type="text" class="fs-4 padding-l br-t-l br-t-r bottom-line" placeholder="Titolo">
-           <textarea class="br-b-l padding-l" placeholder="Inserisci una descrizione" rows="5"></textarea>
+           <input id="title" type="text" class="fs-4 padding-l br-t-l br-t-r bottom-line" size="100" placeholder="Titolo">
+           <textarea id="description" class="br-b-l padding-l" placeholder="Inserisci una descrizione" rows="5"></textarea>
        </div>
        <div class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox">
-           <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important;" onclick="addChallenge()">Aggiungi</p>
+           <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; cursor: pointer" onclick="addChallenge()">Aggiungi</p>
        </div>
    </div>
 </div>
 
 <hr>
 
-<div style="margin-bottom: 10%">
+<div id="challengeContainer1" style="margin-bottom: 10%">
     <div id="challenge1" class="bg-white mt-5 mx-5 d-flex flex-column  box br-t-l br-t-r br-b-l br-b-r">
         <div class="d-flex bottom-line">
             <div class="p-2" style="margin-right: auto;width: 100%">
-                <input id="titolo1" type="text" value="Urlo di Munch" readonly>
+                <input id="titolo1" type="text" value="Urlo di Munch" size="100" readonly>
             </div>
             <div class="left-line">
-                <div class="p-2">
+                <div class="p-2" style="cursor: pointer">
                     <img id="pencil1" class="filterColorDark" src="../../img/challenge-icons/edit.svg" onclick="edit(1)">
                 </div>
             </div>
-            <div class="left-line">
+            <div class="left-line" style="cursor: pointer">
                 <div class="p-2">
                     <img id="downArrow1" class="filterColorDark " src="../../img/challenge-icons/downarrow.png" onclick="showMore(1)">
+                </div>
+            </div>
+            <div class="left-line" style="cursor: pointer">
+                <div class="p-2">
+                    <img class="filterColorDark " src="../../img/x.svg" onclick="deleteChallenge(1)">
                 </div>
             </div>
         </div>
@@ -59,39 +64,75 @@
         <input type="text" id="showMore1" class="padding-l br-b-l br-b-r" style="display: none" value="Ce la puoi fare!" readonly>
     </div>
     <div id="save1" class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox d-none" onclick="saveChanges(1)">
-        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; ">Salva</p>
+        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; cursor: pointer">Salva</p>
     </div>
 </div>
 
-<!--
-<div id="challengeContainer" class="d-none" style="margin-bottom: 10%">
-    <div id="challenge" class="bg-white mt-5 mx-5 d-flex flex-column  box br-t-l br-t-r br-b-l br-b-r">
+<div id="challengeContainer2" style="margin-bottom: 10%">
+    <div id="challenge2" class="bg-white mt-5 mx-5 d-flex flex-column  box br-t-l br-t-r br-b-l br-b-r">
         <div class="d-flex bottom-line">
             <div class="p-2" style="margin-right: auto;width: 100%">
-                <input id="titolo" type="text" value="" readonly>
+                <input id="titolo2" type="text" value="Aggiungi un posto a tavola" size="100" readonly>
             </div>
             <div class="left-line">
-                <div class="p-2">
-                    <img id="pencil" class="filterColorDark" src="../../img/challenge-icons/edit.svg">
+                <div class="p-2" style="cursor: pointer">
+                    <img id="pencil2" class="filterColorDark" src="../../img/challenge-icons/edit.svg" onclick="edit(2)">
                 </div>
             </div>
-            <div class="left-line">
+            <div class="left-line" style="cursor: pointer">
                 <div class="p-2">
-                    <img id="downArrow" class="filterColorDark " src="../../img/challenge-icons/downarrow.png" >
+                    <img id="downArrow2" class="filterColorDark " src="../../img/challenge-icons/downarrow.png" onclick="showMore(2)">
+                </div>
+            </div>
+            <div class="left-line" style="cursor: pointer">
+                <div class="p-2">
+                    <img class="filterColorDark " src="../../img/x.svg" onclick="deleteChallenge(2)">
                 </div>
             </div>
         </div>
-        <input type="text" id="content"class="padding-l br-b-l br-b-r" value="" readonly>
-        <input type="text" id="showMore" class="padding-l br-b-l br-b-r" style="display: none" value="" readonly>
+        <input type="text" id="content2"class="padding-l br-b-l br-b-r" value="Invita un tuo compagno a sedersi vicino a te durante la ricreazione." readonly>
+        <input type="text" id="showMore2" class="padding-l br-b-l br-b-r" style="display: none" value="Ce la puoi fare!" readonly>
     </div>
-    <div id="save" class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox d-none">
-        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; ">Salva</p>
+    <div id="save2" class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox d-none" onclick="saveChanges(2)">
+        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; cursor: pointer">Salva</p>
     </div>
 </div>
--->
+
+<div id="challengeContainer3" style="margin-bottom: 10%">
+    <div id="challenge3" class="bg-white mt-5 mx-5 d-flex flex-column  box br-t-l br-t-r br-b-l br-b-r">
+        <div class="d-flex bottom-line">
+            <div class="p-2" style="margin-right: auto;width: 100%">
+                <input id="titolo3" type="text" value="Come il vento" size="100" readonly>
+            </div>
+            <div class="left-line">
+                <div class="p-2" style="cursor: pointer">
+                    <img id="pencil3" class="filterColorDark" src="../../img/challenge-icons/edit.svg" onclick="edit(3)">
+                </div>
+            </div>
+            <div class="left-line" style="cursor: pointer">
+                <div class="p-2">
+                    <img id="downArrow3" class="filterColorDark " src="../../img/challenge-icons/downarrow.png" onclick="showMore(3)">
+                </div>
+            </div>
+            <div class="left-line" style="cursor: pointer">
+                <div class="p-2">
+                    <img class="filterColorDark " src="../../img/x.svg" onclick="deleteChallenge(3)">
+                </div>
+            </div>
+        </div>
+        <input type="text" id="content3"class="padding-l br-b-l br-b-r" value="Quando avverti l'ansia che sale, imita il rumore del vento con le labbra, facendo dei respiri molto profondi. " readonly>
+        <input type="text" id="showMore3" class="padding-l br-b-l br-b-r" style="display: none" value="Ce la puoi fare!" readonly>
+    </div>
+    <div id="save3" class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox d-none" onclick="saveChanges(3)">
+        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; cursor: pointer">Salva</p>
+    </div>
+</div>
+
+
+
+
 
 <div id="limit"></div>
-
 
 
 
@@ -121,7 +162,6 @@
 <!-- End Footer-->
 </body>
 <script>
-    var i=3;
 
     var show=true;
     function showMore(i){
@@ -179,13 +219,60 @@
 
     }
 
+    function deleteChallenge(i){
+        $("#challengeContainer"+i).remove();
+    }
 
-    /*
+
+    var i=3;
     function addChallenge(){
         i++;
-        console.log("a")
-        $("#challengeContainer").clone().insertBefore("#limit");
-    }*/
+        var challengeContainer="challengeContainer"+i;
+        var challenge="challenge"+i;
+        var titolo="titolo"+i;
+        var pencil="pencil"+i;
+        var downArrow="downArrow"+i;
+        var content="content"+i;
+        var showMore="showMore"+i;
+        var save="save"+i;
+
+        var testoTitolo=$("#title").val();
+        var testoDescrizione=$("#description").val();
+
+
+        $("#limit").prepend('<div id="'+challengeContainer+'" style="margin-bottom: 10%">\n' +
+            '    <div id="'+challenge+'" class="bg-white mt-5 mx-5 d-flex flex-column  box br-t-l br-t-r br-b-l br-b-r">\n' +
+            '        <div class="d-flex bottom-line">\n' +
+            '            <div class="p-2" style="margin-right: auto;width: 100%">\n' +
+            '                <input id="'+titolo+'" type="text" value="'+testoTitolo+'" size="100" readonly>\n' +
+            '            </div>\n' +
+            '            <div class="left-line">\n' +
+            '                <div class="p-2">\n' +
+            '                    <img id="'+pencil+'" class="filterColorDark" src="../../img/challenge-icons/edit.svg" onclick="edit(i)">\n' +
+            '                </div>\n' +
+            '            </div>\n' +
+            '            <div class="left-line">\n' +
+            '                <div class="p-2">\n' +
+            '                    <img id="'+downArrow+'" class="filterColorDark " src="../../img/challenge-icons/downarrow.png" onclick="showMore(i)">\n' +
+            '                </div>\n' +
+            '            </div>\n'+
+            '            <div class="left-line" style="cursor: pointer">\n' +
+            '                <div class="p-2">\n' +
+            '                    <img class="filterColorDark " src="../../img/x.svg" onclick="deleteChallenge(i)">\n' +
+            '                </div>\n' +
+            '            </div>\n'+
+            '        </div>\n' +
+            '        <input type="text" id="'+content+'"class="padding-l br-b-l br-b-r" value="'+testoDescrizione+'" readonly>\n' +
+            '        <input type="text" id="'+showMore+'" class="padding-l br-b-l br-b-r" style="display: none" value="Ce la puoi fare!" readonly>\n' +
+            '    </div>\n' +
+            '    <div id="'+save+'" class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox d-none" onclick="saveChanges(i)">\n' +
+            '        <p class="padding-l padding-r fs-5" style="margin-bottom: 3px!important; ">Salva</p>\n' +
+            '    </div>\n' +
+            '</div>');
+
+    }
+
+
     
 </script>
 </html>

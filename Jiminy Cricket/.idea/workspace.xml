@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad5c91c4-8495-4c08-b624-ca078fa807be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/css/psychologist/challenge.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/downarrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/img/challenge-icons/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jiminy Cricket/pages/psychologist/challenge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jiminy Cricket/css/student/challenge.css" beforeDir="false" afterPath="$PROJECT_DIR$/Jiminy Cricket/css/student/challenge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jiminy Cricket/pages/psychologist/challenge.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jiminy Cricket/pages/psychologist/challenge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jiminy Cricket/pages/student/challenge.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jiminy Cricket/pages/student/challenge.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +57,7 @@
       <workItem from="1655216816695" duration="14539000" />
       <workItem from="1655633233773" duration="3222000" />
       <workItem from="1655838240235" duration="8689000" />
+      <workItem from="1656003408187" duration="5052000" />
     </task>
     <servers />
   </component>
