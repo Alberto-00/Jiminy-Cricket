@@ -1,0 +1,21 @@
+.container-home{
+    text-align: center;
+    margin-top: 4.5em;
+}
+
+h1{
+    font-family: "Creattion Demo";
+    font-size: 75px;
+}
+
+p{
+    width: 65%;
+    font-size: 22px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.btn-home{
+    font-size: 20px;
+    margin-bottom: 40px;
+}

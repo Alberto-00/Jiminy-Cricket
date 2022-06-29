@@ -1,0 +1,21 @@
+h2{
+    font-family: "Creattion Demo";
+    font-size: 75px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 3em;
+    font-size: 22px;
+}
+
+.form-check{
+    margin-bottom: 1.5em!important;
+    font-size: 22px;
+}
+
+.btn-home{
+    float: right;
+    font-size: 18px;
+}
