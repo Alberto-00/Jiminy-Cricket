@@ -8,6 +8,7 @@
     <script src="../../js/jquery/jquery.js"></script>
     <script src="../../js/partials/lib.js"></script>
     <script src="../../js/partials/popup.js"></script>
+    <script src="../../js/student/personalPage.js"></script>
     <link rel="stylesheet" href="../../css/partials/navbar.css">
     <link rel="stylesheet" href="../../css/font/stylesheet.css">
     <link rel="stylesheet" href="../../css/partials/library.css">
@@ -39,54 +40,47 @@
             </div>
         </div>
         <div class="col">
-            <form>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" placeholder="E-mail" id="email" aria-describedby="emailHelp">
-                    <button class="modify">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="nickname" class="form-label">Nickname</label>
-                    <input type="email" class="form-control" placeholder="Nickname" id="nickname" aria-describedby="emailHelp">
-                    <button class="modify">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" placeholder="Password" class="form-control" id="password">
-                    <button class="modify">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="ripetiPassword" class="form-label">Ripeti Password</label>
-                    <input type="password" placeholder="Password" class="form-control" id="ripetiPassword">
-                    <button class="modify">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="date" class="form-label">Data di nascita</label>
-                    <input type="date" class="form-control" id="date">
-                    <button class="modify">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="psyco" class="form-label">Il mio psicologo</label>
-                    <input type="text" placeholder="Il mio psicologo" class="form-control" id="psyco">
-                    <button class="modify">
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" value="marco02@gmail.com" placeholder="E-mail" id="email" aria-describedby="emailHelp" readonly>
+                <button onclick="setField('email')" class="modify">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="nickname" class="form-label">Nickname</label>
+                <input type="email" class="form-control" value="Mark02" placeholder="Nickname" id="nickname" aria-describedby="emailHelp" readonly>
+                <button onclick="setField('nickname')" class="modify">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" placeholder="Password" value="**********" class="form-control" id="password" readonly>
+                <button onclick="setField('password')" class="modify">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Data di nascita</label>
+                <input type="date" class="form-control" value="2002-03-02" id="date" readonly>
+                <button onclick="setField('date')" class="modify">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="psyco" class="form-label">Il mio psicologo</label>
+                <input type="text" placeholder="Il mio psicologo" value="Antonio" class="form-control" id="psyco" readonly>
+                <form action="../chat/chat.html" target="_blank">
+                    <button type="submit" class="modify">
                         <img style="width: 69%;" src="../../img/chat.svg" alt="chat">
                     </button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
     <div class="save">
-        <button href="#myModal" data-toggle="modal"  type="submit" class="trigger-btn btn button-navbar-save">Salva le modifiche</button>
+        <button onclick="saveField()" href="#myModal" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Salva le modifiche</button>
     </div>
 </div>
 <!-- End Anagrafica -->

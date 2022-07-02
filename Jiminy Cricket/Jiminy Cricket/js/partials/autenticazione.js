@@ -41,6 +41,10 @@ $(document).ready(function (){
         return /^[a-zA-Z .']+$/.test(value)
     });
 
+    $.validator.addMethod("passwordEqual", function (value) {
+        return 'Marco02!'.test(value)
+    });
+
     $("form[name='admin-login']").validate({
         rules: {
             email: {
@@ -51,11 +55,13 @@ $(document).ready(function (){
             password: {
                 required: true,
                 strong_password: true,
+                passwordEqual: true,
             }
         },
         messages: {
             password: {
                 required: "Inserire la password.",
+                passwordEqual: "Password errata!"
             },
             email: {
                 required: "Inserire l'Email o l'Username.",
@@ -126,3 +132,13 @@ $(document).ready(function (){
 
     $('#errorLog').fadeIn(500).delay(2600).fadeOut(500);
 })
+
+function login(){
+    var value = $('#email').val();
+    var pass = $('#password').val();
+    if(value === "marco02@gmail.com" && pass === "Marco02!"){
+        location.href = "../pages/student/personalPage.html";
+    } else if(value === "psicologo@gmail.com" && pass === "Psicologo95!"){
+        location.href = "../pages/psychologist/personalPage.html";
+    }
+}

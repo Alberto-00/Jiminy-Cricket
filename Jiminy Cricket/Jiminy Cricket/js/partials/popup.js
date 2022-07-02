@@ -1,5 +1,5 @@
 function exitPage(){
-    location.href = "../../pages/student/personalPage.html";
+    document.getElementById('innerPopup').innerHTML = "";
 }
 
 function logout(){
