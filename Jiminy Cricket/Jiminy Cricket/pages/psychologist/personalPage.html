@@ -7,12 +7,15 @@
     <script src="../../js/jquery/jquery.js"></script>
     <script src="../../js/bootstrap/bootstrap.min.js"></script>
     <script src="../../js/partials/lib.js"></script>
+    <script src="../../js/partials/popup.js"></script>
+    <script src="../../js/psycology/personalPage.js"></script>
     <link rel="stylesheet" href="../../css/partials/navbar.css">
     <link rel="stylesheet" href="../../css/partials/footer.css">
     <link rel="stylesheet" href="../../css/font/stylesheet.css">
     <link rel="stylesheet" href="../../css/partials/library.css">
     <link rel="stylesheet" href="../../css/psychologist/personalpage.css">
     <link rel="stylesheet" href="../../css/student/personalPage.css">
+    <link rel="stylesheet" href="../../css/partials/popupSuccess.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -22,7 +25,7 @@
 </script>
 <!-- End Navbar -->
 <div class="container">
-    <p>Il mio profilo</p>
+    <p style="font-family: 'Creattion Demo'">Il mio profilo</p>
     <div class="row">
         <div class="col">
             <div>
@@ -32,70 +35,65 @@
                 </button>
             </div>
             <div class="logout">
-                <button type="submit" class="btn button-navbar-save">Logout</button>
+                <button href="#myModalLogout" data-toggle="modal" type="submit" class="trigger-btn btn button-navbar-save">Logout</button>
             </div>
         </div>
 
         <!-- Anagrafica -->
         <div class="col">
-            <form onsubmit="return false">
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" value="psicologo@gmail.com" id="email" aria-describedby="emailHelp" readonly>
-                    <button class="modify" id="modifyEmail">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" value="psicologo@gmail.com" id="email" aria-describedby="emailHelp" readonly>
+                <button onclick="setField('email')" class="modify" id="modifyEmail">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" value="Antonio" class="form-control" id="nome" readonly>
+                <button onclick="setField('nome')" class="modify" id="modifyName">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Cognome</label>
+                <input type="text" value="Gallo" class="form-control" id="cognome" readonly>
+                <button onclick="setField('cognome')" class="modify" id="modifyCognome">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Password</label>
+                <input type="password" value="************" class="form-control" id="password" readonly>
+                    <button onclick="setField('password')" class="modify" id="modifyPassword">
                         <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
                     </button>
                 </div>
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" value="Antonio Gallo" class="form-control" id="nome" readonly>
-                    <button class="modify" id="modifyName">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Cognome</label>
-                    <input type="text" value="Antonio Gallo" class="form-control" id="cognome" readonly>
-                    <button class="modify" id="modifyCognome">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Password</label>
-                    <input type="password" value="Antonio Gallo" class="form-control" id="cognome" readonly>
-                    <button class="modify" id="modifyPassword">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="contatto1" class="form-label">Contatto 1</label>
-                    <input type="text" value="000-000-00" class="form-control" id="contatto1" readonly>
-                    <button class="modify" id="modifyContatto1">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="contatto2" class="form-label">Contatto 2</label>
-                    <input type="text" value="Contatto 2" class="form-control" id="contatto2" readonly>
-                    <button class="modify" id="modifyContatto2">
-                        <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
-                    </button>
-                </div>
-            </form>
+            <div class="mb-3">
+                <label for="contatto1" class="form-label">Contatto 1</label>
+                <input type="text" value="000-000-00" class="form-control" id="contatto1" readonly>
+                <button onclick="setField('contatto1')" class="modify" id="modifyContatto1">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
+            <div class="mb-3">
+                <label for="contatto2" class="form-label">Contatto 2</label>
+                <input type="text" value="Contatto 2" class="form-control" id="contatto2" readonly>
+                <button onclick="setField('contatto2')" class="modify" id="modifyContatto2">
+                    <img style="width: 69%;" src="../../img/pencil.svg" alt="pencil">
+                </button>
+            </div>
         </div>
         <!-- End Anagrafica -->
-
     </div>
     <div class="save">
-        <button type="submit" class="btn button-navbar-save">Salva le modifiche</button>
+        <button onclick="saveField()" type="button" class="btn button-navbar-save">Salva le modifiche</button>
     </div>
 </div>
 <br>
 <hr>
 <div class="container">
-    <p>
-        Pazienti
-    </p>
+    <p style="font-family: 'Creattion Demo'">Pazienti</p>
 </div>
 
 <div class="container" id="pazienti">
@@ -133,6 +131,14 @@
 <script>
     includeHTML();
 </script>
+
+<!-- Popup Logout -->
+<div w3-include-html="../partials/popupLogout.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Popup Logout -->
+
 <script>
     $(document).ready(function() {
         function checkMyDiv() {
@@ -145,16 +151,6 @@
             checkMyDiv(true);
         });
         checkMyDiv(false);
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        $("#modifyEmail").click(function (){
-            if($('#email').attr("readonly",true))
-                $('#email').removeAttr("readonly");
-            if($('#email').attr("readonly",false))
-                $('#email').attr("readonly",true);
-        })
     });
 </script>
 </body>
