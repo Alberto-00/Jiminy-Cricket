@@ -3,5 +3,5 @@ function exitPage(){
 }
 
 function logout(){
-    location.href = "../../pages/index.html";
+    location.href = "../../pages/login.html";
 }
