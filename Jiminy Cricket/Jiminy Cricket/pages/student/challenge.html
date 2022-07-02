@@ -32,7 +32,7 @@
        </div>
        <div class="bg-white  box br-b-l br-b-r d-flex flex-row-reverse align-items-center underBox">
            <div class="left-line padding-l">
-               <img id="clock1" class="filterColorDark" src="../../img/challenge-icons/clock.svg" style="width: 40px;height: 40px; cursor: pointer" onclick="changeImage(2)">
+               <img id="clock1" class="filterColorDark" src="../../img/challenge-icons/clock.svg" style="width: 40px;height: 40px; cursor: pointer" onclick="changeImage(1)">
            </div>
            <img id="emoji1" class="filterColorDark" src="../../img/challenge-icons/scared.png" style="width: 24px;height: 24px;margin-top: 2px;cursor: pointer" onclick="switchColor(1)">
            <img id="emoji2" class="filterColorDark" src="../../img/challenge-icons/icons8-arrabbiato-32.png" style="margin-top: 2px;cursor: pointer" onclick="switchColor(2)">
@@ -89,16 +89,15 @@
     function changeImage(i){
         document.getElementById("clock"+i).src = "../../img/challenge-icons/check.svg";
     }
-    var addOrRemove=true;
+
     function switchColor(i){
-        if ( addOrRemove ) {
+        if ($("#emoji"+i).hasClass("filterColorDark" )  ) {
             $("#emoji"+i).removeClass( "filterColorDark" );
             $("#emoji"+i).addClass( "filterColorLight" );
-            addOrRemove=false;
         } else {
             $("#emoji"+i).removeClass( "filterColorLight" );
             $("#emoji"+i).addClass( "filterColorDark" );
-            addOrRemove=true;
+
         }
     }
 </script>
