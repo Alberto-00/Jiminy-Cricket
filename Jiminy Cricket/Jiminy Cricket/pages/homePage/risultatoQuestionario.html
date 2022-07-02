@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jiminy Cricket - Questionario</title>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/partials/lib.js"></script>
+    <link rel="stylesheet" href="../../css/partials/navbar.css">
+    <link rel="stylesheet" href="../../css/font/stylesheet.css">
+    <link rel="stylesheet" href="../../css/partials/library.css">
+    <link rel="stylesheet" href="../../css/homepage/elencoPsicologi.css">
+    <link rel="stylesheet" href="../../css/partials/footer.css">
+</head>
+<body>
+<!-- Navbar -->
+<div w3-include-html="../partials/navbar.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Navbar -->
+
+<div class="container justify-content-center">
+    <div class="row">
+        <div class="col align-self-center text-center" style="margin-bottom: 30px">
+            <h1><b>Lo psicologo che ti proponiamo è:</b></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card text-center rounded cardPsyco" style="">
+            <div class="text-center imgContainer" style="">
+                <img src="../../img/psico1.png" class="card-img-top imgMask" alt="..."></div>
+            <div class="card-body">
+                <h5 class="card-title" style="">Antonio Rivieccio</h5>
+                <p class="card-text rounded-pill infoPsyco" style=""><b>Indirizzo: </b> Via San Gerardo 82, Napoli
+                    <br></p>
+                <p class="card-text rounded-pill infoPsyco" style=""><b>Psicologo Cognitivo-corpontamentale:</b></p>
+            </div>
+            <ul class="list-group list-group-flush" style="padding-bottom: 15px">
+                <li class="list-group-item rounded-pill infoPsycoListElement" style="">Ansia</li>
+                <li class="list-group-item rounded-pill infoPsycoListElement" style="background-color: #CFC69F">Relazioni</li>
+                <li class="list-group-item rounded-pill infoPsycoListElement" style="background-color: #CFC69F">Stress</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row justify-content-between">
+        <div class="col-2 align-self-start">
+            <form action="elencoPsicologiScelta.html">
+                <button type="submit" class="btn btn-home btn-danger">Scegline un altro</button>
+            </form>
+        </div>
+        <div class="col-1 align-self-end">
+            <form action="../student/personalPage.html">
+                <button type="submit" class="btn btn-home button-navbar-psy">Avanti</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div w3-include-html="../partials/footer.html"></div>
+<script>
+    includeHTML();
+</script>
+<!-- End Footer -->
+
+</body>
+</html>

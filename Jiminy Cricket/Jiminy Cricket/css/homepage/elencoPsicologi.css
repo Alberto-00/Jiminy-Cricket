@@ -2,3 +2,39 @@
     margin: auto;
     margin-bottom: 4em;
 }
+
+.cardPsyco{
+    width: 22rem;
+    background-color: #89AB7C;
+}
+
+.imgContainer{
+    padding-top: 15px;
+}
+
+.imgMask{
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #B7DB99;
+}
+
+.card-title{
+    font-size: 27px;
+}
+
+.infoPsyco{
+    background-color: #B7DB99;
+    padding: 10px;
+}
+
+.infoPsycoListElement{
+    background-color: #CFC69F;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.searchBar{
+    margin-bottom: 30px;
+}
