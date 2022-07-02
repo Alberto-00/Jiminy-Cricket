@@ -107,7 +107,7 @@ textarea{
     background-color: #C0DDA8;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     textarea{
         width: 100%;
         margin-right: 30px;
