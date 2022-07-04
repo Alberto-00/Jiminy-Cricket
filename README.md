@@ -2,7 +2,7 @@
   <img style="width: 200px" src="./Jiminy Cricket/Jiminy Cricket/img/logo.png"/>
 </p>
 <p align="center" dir="auto">
-  Web App front-end to help high school students relationship and personal problems.<br>
+  Web App front-end to help high school students in relationship and personal problems.<br>
   A project for<br>
   <i>Human-Computer Interaction</i><br> 
   course at the University of Salerno.
