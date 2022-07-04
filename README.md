@@ -60,8 +60,7 @@
     </svg>
   </a>
   Contributors
-  </h1>
-  
-<a href="https://github.com/Alberto-00/EasyPass-AI/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Alberto-00/EasyPass-AI" />
+  </h1> 
+<a href="https://github.com/Alberto-00/Jiminy-Cricket/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Alberto-00/Jiminy-Cricket" />
 </a>
